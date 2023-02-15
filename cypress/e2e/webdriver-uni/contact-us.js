@@ -7,10 +7,11 @@ describe("Test Contact Us form via WebdriverUni", () => {
             globalThis.data = data;
         })
     });
+
+    beforeEach(() => {
+        cy.visit(Cypress.env("webdriveruni_homepage") + "/Contact-Us/contactus.html");
+    });
     it("Should be able to submit a successful submission via contact us form", () => {
-        // cy.visit("http://www.webdriveruniversity.com/Contact-Us/contactus.html")
-        cy.visit("/");
-        cy.get("#contact-us").invoke('removeAttr', 'target').click({force: true});
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8');
         cy.title().should('include', 'WebDriver | Contact Us');
         cy.url().should('include', 'contactus');
@@ -25,10 +26,7 @@ describe("Test Contact Us form via WebdriverUni", () => {
         cy.webdriverUni_ContactForm_Submission(Cypress.env("first_name"), data.last_name, data.email, "How can I learn cypress", 'h1', 'Thank You for your Message!');
     });
 
-    it("Should not be able to submit a successful submission via contact us form as all fields are required", () => {
-        // cy.visit("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
-        cy.visit("/");
-        cy.get("#contact-us").invoke('removeAttr', 'target').click({force: true});
+    it("Should not be able to submit a successful submission via contact us form as all fields are required", () => {        
         // Code below replaced by custom commands
         // cy.get('[name="first_name"]').type(data.first_name);
         // cy.get('[name="last_name"]').type(data.last_name);

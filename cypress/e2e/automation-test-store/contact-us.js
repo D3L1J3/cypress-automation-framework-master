@@ -2,6 +2,7 @@
 
 describe("Test Contact Us form via Automation Test Store", () => {
     before(() => {
+        // cy.viewport(550, 750); // overrides global setting
         cy.fixture("userDetails").as("user");
     });
     it("Should be able to submit a successful submission via contact us form", () => {

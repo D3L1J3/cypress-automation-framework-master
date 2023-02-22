@@ -2,6 +2,7 @@
 
 describe("Verify checkboxes via WebdriverUni", () => {
     beforeEach(() => {
+        // cy.log(Cypress.env("name")); // how to read values in custom config
         cy.navigateTo_Webdriveruni_Checkbox_Page();
     });
     it("Check and validate checkboxes", () => {

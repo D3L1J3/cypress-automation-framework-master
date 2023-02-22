@@ -1,2 +1,8 @@
 # Ignore node_modules folder
 node_modules
+results
+screenshots
+videos
+mochawesome
+mochawesome-report
+package-lock.json

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-02-21T14:26:00.928Z",
-    "end": "2023-02-21T14:26:04.770Z",
-    "duration": 3842,
+    "start": "2023-02-22T07:16:37.533Z",
+    "end": "2023-02-22T07:16:40.555Z",
+    "duration": 3022,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d77aff45-0284-46fe-956a-fa6c7a72f13b",
+      "uuid": "4a27a94b-747b-4b56-8270-14924c998d4e",
       "title": "",
       "fullFile": "cypress\\e2e\\automation-test-store\\variables-and-cy-commands.js",
       "file": "cypress\\e2e\\automation-test-store\\variables-and-cy-commands.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2786552c-9631-4f2e-beef-75f333f35542",
+          "uuid": "4ca0fb8b-dff9-42ec-bf1f-0d80cabf97ce",
           "title": "Verifying variables, cypress commands and jquery commands",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Validate properties of the Contact us page",
               "fullTitle": "Verifying variables, cypress commands and jquery commands Validate properties of the Contact us page",
               "timedOut": null,
-              "duration": 1993,
+              "duration": 1118,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://automationteststore.com/index.php?rt=content/contact\");\n// Uses cypress commands and chaining\ncy.contains('#ContactUsFrm', 'Contact Us Form').find('#field_11').should('contain', 'First name:');\n// JQuery Approach\ncy.contains('#ContactUsFrm', 'Contact Us Form').then(text => {\n  const firstNameText = text.find('#field_11').text();\n  expect(firstNameText).to.contain('First name:');\n  // Embedded commands (Closure)\n  cy.get(\"#field_11\").then(fnText => {\n    cy.log(fnText.text());\n    cy.log(fnText);\n  });\n});",
               "err": {},
-              "uuid": "33cc4ef6-eb6f-47e9-b363-3656f4fdcd33",
-              "parentUUID": "2786552c-9631-4f2e-beef-75f333f35542",
+              "uuid": "fab697da-8f3b-4231-be1a-4a97043c8d7e",
+              "parentUUID": "4ca0fb8b-dff9-42ec-bf1f-0d80cabf97ce",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "33cc4ef6-eb6f-47e9-b363-3656f4fdcd33"
+            "fab697da-8f3b-4231-be1a-4a97043c8d7e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1993,
+          "duration": 1118,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

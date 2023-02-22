@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-02-21T14:26:11.084Z",
-    "end": "2023-02-21T14:26:15.277Z",
-    "duration": 4193,
+    "start": "2023-02-22T07:16:46.518Z",
+    "end": "2023-02-22T07:16:50.683Z",
+    "duration": 4165,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "dd5ece62-f44d-49a3-a694-f9e74ad3cb67",
+      "uuid": "ed87bfaa-4ddd-41b5-a08f-d7fd33e26ea7",
       "title": "",
       "fullFile": "cypress\\e2e\\webdriver-uni\\browser-navigation.js",
       "file": "cypress\\e2e\\webdriver-uni\\browser-navigation.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "41c36975-0662-4664-b59c-c586faf02b06",
+          "uuid": "c3182914-8b11-4a34-b308-ae80bae68f8d",
           "title": "Validate webdriveruni homepage links",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Confirm links redirect to the correct pages",
               "fullTitle": "Validate webdriveruni homepage links Confirm links redirect to the correct pages",
               "timedOut": null,
-              "duration": 4156,
+              "duration": 4139,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"/\");\ncy.get(\"#contact-us\").invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.url().should('include', 'contactus');\ncy.go('back');\ncy.reload();\ncy.url().should('include', 'http://www.webdriveruniversity.com/');\n// cy.reload(true); // reload without using cache\ncy.go('forward');\ncy.url().should('include', 'contactus');\ncy.go('back');\ncy.get(\"#login-portal\").invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.url().should('include', 'Login-Portal');\ncy.go('back');\ncy.get(\"#to-do-list\").invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.url().should('include', 'To-Do-List');\ncy.go('back');",
               "err": {},
-              "uuid": "758cb529-4ac3-4864-9ad6-bd1233cbd5d5",
-              "parentUUID": "41c36975-0662-4664-b59c-c586faf02b06",
+              "uuid": "25a7e4a3-ca5f-4270-84b8-f0ca17f0df19",
+              "parentUUID": "c3182914-8b11-4a34-b308-ae80bae68f8d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "758cb529-4ac3-4864-9ad6-bd1233cbd5d5"
+            "25a7e4a3-ca5f-4270-84b8-f0ca17f0df19"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4156,
+          "duration": 4139,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

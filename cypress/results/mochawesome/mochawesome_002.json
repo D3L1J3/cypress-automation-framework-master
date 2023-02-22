@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-02-21T14:25:40.395Z",
-    "end": "2023-02-21T14:25:46.983Z",
-    "duration": 6588,
+    "start": "2023-02-22T07:16:15.380Z",
+    "end": "2023-02-22T07:16:22.746Z",
+    "duration": 7366,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ca38474f-b7bd-4233-b558-af9c2e4b6d23",
+      "uuid": "0ed012b3-1591-4f00-937b-bae029553991",
       "title": "",
       "fullFile": "cypress\\e2e\\automation-test-store\\contact-us.js",
       "file": "cypress\\e2e\\automation-test-store\\contact-us.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "94497397-2d55-4898-88c3-add5494bc759",
+          "uuid": "3463e5fd-1eb9-4a54-bae1-8a565b9cb431",
           "title": "Test Contact Us form via Automation Test Store",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should be able to submit a successful submission via contact us form",
               "fullTitle": "Test Contact Us form via Automation Test Store Should be able to submit a successful submission via contact us form",
               "timedOut": null,
-              "duration": 4499,
+              "duration": 4999,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://www.automationteststore.com/');\ncy.get(\"a[href$='contact']\").click().then(function (linkText) {\n  cy.log(\"Clicked on link using text: \" + linkText.text());\n});\ncy.get(\"@user\").then(user => {\n  cy.get('#ContactUsFrm_first_name').type(user.first_name);\n  cy.get('#ContactUsFrm_email').type(user.email);\n});\ncy.get('#ContactUsFrm_email').should('have.attr', 'name', 'email');\ncy.get('#ContactUsFrm_enquiry').type(\"Do you provide additional discount on bulk orders?\");\ncy.get('button[title=\"Submit\"]').click();\ncy.get('.mb40 > :nth-child(3)').should('have.text', 'Your enquiry has been successfully sent to the store owner!');\ncy.log(\"Test has completed\");",
               "err": {},
-              "uuid": "d037d38c-7265-4e08-ab37-0c1aa140dfb5",
-              "parentUUID": "94497397-2d55-4898-88c3-add5494bc759",
+              "uuid": "f12a73c2-bd81-4da5-ad0c-6d1875281e5a",
+              "parentUUID": "3463e5fd-1eb9-4a54-bae1-8a565b9cb431",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d037d38c-7265-4e08-ab37-0c1aa140dfb5"
+            "f12a73c2-bd81-4da5-ad0c-6d1875281e5a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4499,
+          "duration": 4999,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

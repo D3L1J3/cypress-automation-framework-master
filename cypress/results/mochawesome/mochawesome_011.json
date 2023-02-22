@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-02-21T14:26:31.640Z",
-    "end": "2023-02-21T14:26:33.629Z",
-    "duration": 1989,
+    "start": "2023-02-22T07:17:06.480Z",
+    "end": "2023-02-22T07:17:08.575Z",
+    "duration": 2095,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "98a4d6af-7dc7-4c0a-8937-442ba6ec286b",
+      "uuid": "19c0e5c6-9465-46c9-9ad3-50fca8bf409e",
       "title": "",
       "fullFile": "cypress\\e2e\\webdriver-uni\\datepicker.js",
       "file": "cypress\\e2e\\webdriver-uni\\datepicker.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b98da6ee-a10f-4c68-8d79-fab063d4c17c",
+          "uuid": "cb9eef2a-0ae1-45f6-826f-f5dff34ce777",
           "title": "Test datepicker via webdriveruni",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Select date from the datepicker",
               "fullTitle": "Test datepicker via webdriveruni Select date from the datepicker",
               "timedOut": null,
-              "duration": 1961,
+              "duration": 2077,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"/\");\ncy.get(\"#datepicker\").invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.get(\"#datepicker\").click();\n// Examples\n// let date = new Date();\n// date.setDate(date.getDate()); \n// cy.log(date.getDate()); // get current date i.e 22\n// let date2 = new Date();\n// date2.setDate(date2.getDate() + 5);\n// cy.log(date2.getDate()); // get current date i.e 27\nvar date = new Date();\ndate.setDate(date.getDate() + 80);\nvar futureYear = date.getFullYear();\nvar futureMonth = date.toLocaleString(\"default\", {\n  month: \"long\"\n});\nvar futureDay = date.getDate();\ncy.log(\"Future year to select: \" + futureYear);\ncy.log(\"Future month to select: \" + futureMonth);\ncy.log(\"Future day to select: \" + futureDay);\nfunction selectMonthAndYear() {\n  cy.get(\".datepicker-dropdown\").find(\".datepicker-switch\").first().then(currentDate => {\n    if (!currentDate.text().includes(futureYear)) {\n      cy.get(\".next\").first().click();\n      selectMonthAndYear();\n    }\n  }).then(() => {\n    cy.get(\".datepicker-dropdown\").find(\".datepicker-switch\").first().then(currentDate => {\n      if (!currentDate.text().includes(futureMonth)) {\n        cy.get(\".next\").first().click();\n        selectMonthAndYear();\n      }\n    });\n  });\n}\nfunction selectFutureDay() {\n  cy.get(\"[class='day']\").contains(futureDay).click();\n}\nselectMonthAndYear();\nselectFutureDay();",
               "err": {},
-              "uuid": "854ce1c0-b389-4654-ab2c-49bd76f2ab29",
-              "parentUUID": "b98da6ee-a10f-4c68-8d79-fab063d4c17c",
+              "uuid": "a174043c-c654-466b-b38a-f7eddcef0f55",
+              "parentUUID": "cb9eef2a-0ae1-45f6-826f-f5dff34ce777",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "854ce1c0-b389-4654-ab2c-49bd76f2ab29"
+            "a174043c-c654-466b-b38a-f7eddcef0f55"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1961,
+          "duration": 2077,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

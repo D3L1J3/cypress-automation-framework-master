@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2023-02-21T14:26:51.866Z",
-    "end": "2023-02-21T14:26:53.654Z",
-    "duration": 1788,
+    "start": "2023-02-22T07:17:25.702Z",
+    "end": "2023-02-22T07:17:27.236Z",
+    "duration": 1534,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2ef2a7dd-9955-4570-96b9-497b23c40392",
+      "uuid": "080b73e2-adc0-435f-b635-9374cbee03ca",
       "title": "",
       "fullFile": "cypress\\e2e\\webdriver-uni\\radio-buttons.js",
       "file": "cypress\\e2e\\webdriver-uni\\radio-buttons.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b80d13cb-82a0-4182-aece-f64887909f29",
+          "uuid": "51a206c0-94bb-4582-98b8-3c13dff68a68",
           "title": "Verify radio buttons via WebdriverUni",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Check specific radio buttons",
               "fullTitle": "Verify radio buttons via WebdriverUni Check specific radio buttons",
               "timedOut": null,
-              "duration": 1267,
+              "duration": 973,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(\"#radio-buttons\").find(\"input[type='radio']\").eq(2).check();",
               "err": {},
-              "uuid": "b16ba975-5cad-4a5a-97cd-a7e063d9a95b",
-              "parentUUID": "b80d13cb-82a0-4182-aece-f64887909f29",
+              "uuid": "2168d6fa-b112-4c30-a038-f1304de65d0b",
+              "parentUUID": "51a206c0-94bb-4582-98b8-3c13dff68a68",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Validate state of specific radio buttons",
               "fullTitle": "Verify radio buttons via WebdriverUni Validate state of specific radio buttons",
               "timedOut": null,
-              "duration": 500,
+              "duration": 536,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.get(\"#radio-buttons\").find(\"input[type='radio']\").eq(2).check();\ncy.get(\"[value='lettuce']\").should('not.be.checked');\ncy.get(\"[value='pumpkin']\").should('be.checked');\ncy.get(\"[value='lettuce']\").check();\ncy.get(\"[value='lettuce']\").should('be.checked');\ncy.get(\"[value='pumpkin']\").should('not.be.checked');\ncy.get(\"[value='cabbage']\").should('be.disabled');",
               "err": {},
-              "uuid": "d610a326-5514-4edc-ab37-3a610594d3c7",
-              "parentUUID": "b80d13cb-82a0-4182-aece-f64887909f29",
+              "uuid": "8a6c3aa3-e53f-4a7f-8c9c-6084b6ff99a4",
+              "parentUUID": "51a206c0-94bb-4582-98b8-3c13dff68a68",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b16ba975-5cad-4a5a-97cd-a7e063d9a95b",
-            "d610a326-5514-4edc-ab37-3a610594d3c7"
+            "2168d6fa-b112-4c30-a038-f1304de65d0b",
+            "8a6c3aa3-e53f-4a7f-8c9c-6084b6ff99a4"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1767,
+          "duration": 1509,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

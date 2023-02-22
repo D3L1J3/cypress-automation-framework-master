@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-02-21T14:26:58.943Z",
-    "end": "2023-02-21T14:26:59.436Z",
-    "duration": 493,
+    "start": "2023-02-22T07:17:32.627Z",
+    "end": "2023-02-22T07:17:33.177Z",
+    "duration": 550,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4ab14d95-923d-45eb-a305-6cf3aa84dacf",
+      "uuid": "ffbe5bc5-d862-4d60-94e1-f4cb4f54259d",
       "title": "",
       "fullFile": "cypress\\e2e\\webdriver-uni\\selectors.js",
       "file": "cypress\\e2e\\webdriver-uni\\selectors.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "accb8913-b987-454a-955b-a6e9ec385208",
+          "uuid": "717a6954-c009-49a3-8733-8d48e79389dd",
           "title": "Selector examples",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Examples of Selectors via WebdriverUni Contact Us Page",
               "fullTitle": "Selector examples Examples of Selectors via WebdriverUni Contact Us Page",
               "timedOut": null,
-              "duration": 467,
+              "duration": 516,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"/Contact-Us/contactus.html\");\n//By tag name\ncy.get(\"input\");\n//By attribute name and value\ncy.get(\"input[name='first_name']\");\n//By id\ncy.get(\"#contact_me\");\n//By class\ncy.get(\".feedback-input\");\n//By multiple classes\ncy.get(\"[class='navbar navbar-inverse navbar-fixed-top']\");\n//By two different attributes\ncy.get(\"[name='email'][placeholder='Email Address']\");\n//By xpath\ncy.xpath(\"//input[@name='first_name']\");",
               "err": {},
-              "uuid": "44f44d22-9b08-419d-9dc5-7a0588a6838f",
-              "parentUUID": "accb8913-b987-454a-955b-a6e9ec385208",
+              "uuid": "800ed407-8b63-430f-b53e-a820588f4668",
+              "parentUUID": "717a6954-c009-49a3-8733-8d48e79389dd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "44f44d22-9b08-419d-9dc5-7a0588a6838f"
+            "800ed407-8b63-430f-b53e-a820588f4668"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 467,
+          "duration": 516,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

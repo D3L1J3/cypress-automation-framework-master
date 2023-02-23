@@ -19,7 +19,7 @@ describe("Alias and invoke", () => {
         .invoke('attr', 'title').should('include', 'Add to Cart');
     });
 
-    it.only("Calculate total of normal and sale products", () => {
+    it("Calculate total of normal and sale products", () => {
         cy.visit("https://automationteststore.com/");
         cy.get(".thumbnail").as('productThumbnail');
         // cy.get('@productThumbnail').find('.oneprice').each(($el, index, $list) => {

@@ -45,7 +45,7 @@ module.exports = defineConfig({
     },
     env: {
       first_name: "Sarah",
-      webdriveruni_homepage: "http://www.webdriveruniversity.com"
-    }
+      webdriveruni_homepage: "http://www.webdriveruniversity.com",
+      NO_COLOR=1
   },
 });

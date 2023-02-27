@@ -23,7 +23,7 @@ module.exports = defineConfig({
       return getConfigurationByFile(file)
     },
     specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}",
-    excludeSpecPattern: "cypress/e2e/{other,1-getting-started,2-advanced-examples}/**/*.js",  // how to ignore files
+    excludeSpecPattern: "cypress/e2e/{1-getting-started,2-advanced-examples}/**/*.js",  // how to ignore files
     baseUrl: "http://www.webdriveruniversity.com",
     chromeWebSecurity: false,
     experimentalSessionAndOrigin: true,
